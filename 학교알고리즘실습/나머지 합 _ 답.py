@@ -12,6 +12,7 @@ for i in range(N):
 
 result = numRemainder[0]
 
+# 나머지가 같은 것들 중에서 2개를 뽑아서 조합을 만든다.
 for i in numRemainder:
   result += i*(i-1)//2
   
