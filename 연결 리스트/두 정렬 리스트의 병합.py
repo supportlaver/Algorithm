@@ -4,6 +4,7 @@
 
 from typing import ListNode
 def mergeTwoLists(l1:ListNode, l2:ListNode) -> ListNode:
+
     if (not l1) or (l2 and l1.val > l2.val):
         l1,l2 = l2,l1
     if l1:
