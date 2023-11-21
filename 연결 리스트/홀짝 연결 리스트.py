@@ -25,7 +25,7 @@ class Solution:
         while even_head is not None:
             even_list.next = even_head
             even_head = even_head.next
-            
+
     def oddEvenList(self , head:ListNode) -> ListNode:
 
         if head is None:
@@ -37,7 +37,7 @@ class Solution:
 
         # 반복하면서 홀짝 노드 처리
         while even and even.next:
-            odd.next , even.next = odd.next.next , even.next,next
+            odd.next , even.next = odd.next.next , even.next.next
             odd , even = odd.next , even.next
         
         # 홀수 노드의 마지막을 짝수 헤드로 연결
