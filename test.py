@@ -1,10 +1,7 @@
-import collections
-
-nums = [2,2,1,1,3]
-
-count = collections.Counter(nums)
-
-for c in count:
-    print(count[c] , c)
-    print()
-    
+grid = [
+    ["1","1","1","1","0"],
+    ["1","1","0","1","0"],
+    ["1","1","0","0","0"],
+    ["0","0","0","0","0"]]
+print(len(grid)) # row
+print(len(grid[0])) # col
